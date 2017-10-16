@@ -2,6 +2,12 @@ body{
     font-family: "微软雅黑";
     font-size: 15px;
     background-color: rgb(244,244,244);
+    padding-top: 45px;
+}
+
+menu{
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -25,6 +31,16 @@ a{
 .radius-50{
     border-radius: 50%;
     -moz-border-radius: 50%;    
+}
+
+/***
+ * 动画快到慢效果
+ */
+.ease-in-out(@time){
+    transition:all @time ease-in-out;
+    -moz-transition:all @time ease-in-out;
+    -webkit-transition:all @time ease-in-out; 
+    -o-transition:all @time ease-in-out;     
 }
 
 /***
@@ -62,6 +78,10 @@ a{
     height: 45px;
     line-height: 45px;
     background-color: rgb(255,255,255);
+    position: fixed;
+    top: 0;
+    z-index: 13;
+    box-shadow: 0px 0px 7px #888888;
     .catalogue,.search{
         flex: 44px 0 0;
         text-align: center;
@@ -74,3 +94,43 @@ a{
     }
 }
 
+/***
+ * 头部菜单
+ */
+.header-menu{
+    position: fixed;
+    top: -185px;
+    z-index: 12;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,255,255);
+    .ease-in-out(.5s);
+    .menu-content{
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-bottom: 1px solid rgb(239,239,239);
+    }
+}
+
+.header-menu-on{
+    transform: translate3d(0px, 230px, 0px) translateZ(0px);
+}
+
+/***
+ * 蒙层
+ */
+.PopUp-layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48,48,48,.5);
+    position: fixed;
+    top: 45px;
+    z-index: 11;
+    opacity: 0;
+    .ease-in-out(.5s);
+}
+
+.PopUp-layer-on{
+    opacity: 1;
+}

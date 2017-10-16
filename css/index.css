@@ -55,24 +55,23 @@
   overflow: hidden;
 }
 .category-floor .content .floor-content .swiper-wrapper {
-  padding: 1px 15px;
+  padding: 1px 0;
 }
 .category-floor .content .floor-content .swiper-wrapper .swiper-slide {
   height: 85px;
-  width: 62px;
+  width: 60px;
   margin-right: 13px;
   box-shadow: 0 0 0.05rem 0 rgba(0, 0, 0, 0.16);
   padding: 12px;
-}
-.category-floor .content .floor-content .swiper-wrapper .swiper-slide:first-child {
-  margin-left: -25px;
 }
 .category-floor .content .floor-content .swiper-wrapper .swiper-slide:last-child {
   margin-right: 0px;
 }
 .category-floor .content .floor-content .swiper-wrapper .swiper-slide img {
+  height: 60px;
   width: 100%;
   border-radius: 15px;
+  margin-bottom: 5px;
 }
 .category-floor .content .floor-content .swiper-wrapper .swiper-slide span {
   display: block;
@@ -81,6 +80,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: 14px;
 }
 /***
  * 专题广告
