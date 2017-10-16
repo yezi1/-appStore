@@ -1,10 +1,304 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
 		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />		
 	</head>
+
 	<body>
-		<h1>888</h1>
+		<!--头部-->
+		<header class="public-header flex-css">
+			<section class="fa fa-bars catalogue"></section>
+			<section class="header-title">久久程序</section>
+			<section class="fa fa-search search"></section>
+		</header>
+		
+		<!--轮播-->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide shuffling"></div>
+				<div class="swiper-slide shuffling"></div>
+				<div class="swiper-slide shuffling"></div>
+				<div class="swiper-slide shuffling"></div>
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		
+		<!--模块分类-->
+		<section class="module flex-css">
+			<a href="https://www.baidu.com/" class="review" >
+				<div class="icon radius-50">
+					<span class="fa fa-pencil"></span>
+				</div>
+				<span>评测</span>
+			</a>
+			<a href="#" class="project">
+				<div class="icon radius-50">
+					<span class="fa fa-cubes"></span>
+				</div>
+				<span>专题</span>
+			</a>
+			<a href="#" class="leaderboard">
+				<div class="icon radius-50">
+					<span class="fa fa-bar-chart"></span>
+				</div>
+				<span>排行榜</span>
+			</a>
+			<a href="#" class="category">
+				<div class="icon radius-50">
+					<span class="fa fa-tasks"></span>
+				</div>
+				<span>分类</span>
+			</a>
+		</section>
+			
+		<!--其他 1-->
+		<section class="category-floor">
+			<section class="content">
+				<div class="others-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj1.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj2.jpg" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj3.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj4.png" alt="应用" />
+							</a>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>	
+			
+		<!--每日精选-->
+		<section class="category-floor">
+			<header class="title">
+				<span class="text">每日精选</span>
+				<a href="#" class="show">显示更多></a>
+			</header>
+			<section class="content">
+				<div class="floor-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/jx1.PNG" alt="应用" />
+							<span>极简笔记</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/jx2.jpg" alt="应用" />
+							<span>洽总日签</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/jx3.jpg" alt="应用" />
+							<span>她厨美食</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/jx4.png" alt="应用" />
+							<span>热点小黄历</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/jx5.jpg" alt="应用" />
+							<span>健康计算器</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/jx6.png" alt="应用" />
+							<span>名片云管家</span>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>
+		
+		<!--社交-->
+		<section class="category-floor">
+			<header class="title">
+				<span class="text">社交</span>
+				<a href="#" class="show">显示更多></a>
+			</header>
+			<section class="content">
+				<div class="floor-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/sj1.jpg" alt="应用" />
+							<span>群约助手</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sj2.png" alt="应用" />
+							<span>角蛙动图</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sj3.png" alt="应用" />
+							<span>美食天下+</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sj4.png" alt="应用" />
+							<span>掌上英雄联盟lite</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sj5.png" alt="应用" />
+							<span>迹忆碎片</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/sj6.jpg" alt="应用" />
+							<span>厦门小鱼社区</span>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>
+		
+		<!--其他 2-->
+		<section class="category-floor">
+			<section class="content">
+				<div class="others-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj1.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj2.jpg" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj3.png" alt="应用" />
+							</a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#">
+								<img src="img/tj4.png" alt="应用" />
+							</a>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>
+		
+		<!--音乐-->
+		<section class="category-floor">
+			<header class="title">
+				<span class="text">音乐</span>
+				<a href="#" class="show">显示更多></a>
+			</header>
+			<section class="content">
+				<div class="floor-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/yl.jpg" alt="应用" />
+							<span>碎乐 +</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/yl1.jpg" alt="应用" />
+							<span>听闻FM电台</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/yl2.png" alt="应用" />
+							<span>青蜻蜓</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/yl3.png" alt="应用" />
+							<span>荔枝FM</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/yl4.png" alt="应用" />
+							<span>铃音DIY</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/yl5.png" alt="应用" />
+							<span>喜马拉雅FM</span>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>
+		
+		<!--最新小程序-->
+		<section class="category-floor">
+			<header class="title">
+				<span class="text">最新小程序</span>
+				<a href="#" class="show">显示更多></a>
+			</header>
+			<section class="content">
+				<div class="floor-content">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="img/n1.png" alt="应用" />
+							<span>leanfit健身名片</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/n2.png" alt="应用" />
+							<span>专业P图PS图片处理修图改图在线</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/n3.png" alt="应用" />
+							<span>知晓鸟</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/n4.png" alt="应用" />
+							<span>夺宝助手</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/n5.jpg" alt="应用" />
+							<span>皇阿码礼记</span>
+						</div>
+						<div class="swiper-slide">
+							<img src="img/n6.png" alt="应用" />
+							<span>校内达小微</span>
+						</div>
+					</div>
+				</div>				
+			</section>
+		</section>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container',{
+				touchRatio : 0.5,
+				pagination: '.swiper-pagination'
+			});
+			var myFloor = new Swiper('.floor-content',{
+				loop : true,
+				slidesPerView : 'auto',
+				loopedSlides :6
+			});
+			var myothers = new Swiper('.others-content',{
+				loop : true,
+				slidesPerView : 'auto',
+				loopedSlides :5
+			});
+		</script>
 	</body>
+
 </html>

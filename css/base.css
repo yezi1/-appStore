@@ -1,0 +1,69 @@
+body {
+  font-family: "微软雅黑";
+  font-size: 15px;
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+/***
+ * flex布局
+ */
+.flex-css {
+  display: -moz-box;
+  display: -webkit-box;
+  display: box;
+  display: flex;
+}
+/***
+ * 圆角50%
+ */
+.radius-50 {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+/***
+ * 轮播
+ */
+.swiper-container {
+  width: 100%;
+  height: 165px;
+}
+.swiper-container .swiper-wrapper .shuffling {
+  height: 165px;
+  width: 100%;
+  background-size: cover!important;
+}
+.swiper-container .swiper-wrapper .shuffling:nth-child(1) {
+  background: url(../img/banner1.jpg) no-repeat 50% 50%;
+}
+.swiper-container .swiper-wrapper .shuffling:nth-child(2) {
+  background: url(../img/banner2.png) no-repeat 50% 50%;
+}
+.swiper-container .swiper-wrapper .shuffling:nth-child(3) {
+  background: url(../img/banner3.png) no-repeat 50% 50%;
+}
+.swiper-container .swiper-wrapper .shuffling:nth-child(4) {
+  background: url(../img/banner4.jpg) no-repeat 50% 50%;
+}
+/***
+ * 头部
+ */
+.public-header {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background-color: #ffffff;
+}
+.public-header .catalogue,
+.public-header .search {
+  flex: 44px 0 0;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+}
+.public-header .header-title {
+  flex: 1 0 0;
+  text-align: center;
+}
