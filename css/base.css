@@ -100,6 +100,11 @@ a {
   text-align: center;
   border-bottom: 1px solid #efefef;
 }
+.header-menu .menu-content a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .header-menu-on {
   transform: translate3d(0px, 230px, 0px) translateZ(0px);
 }
@@ -112,7 +117,7 @@ a {
   background-color: rgba(48, 48, 48, 0.5);
   position: fixed;
   top: 45px;
-  z-index: 11;
+  z-index: -11;
   opacity: 0;
   transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -121,4 +126,5 @@ a {
 }
 .PopUp-layer-on {
   opacity: 1;
+  z-index: 11;
 }
