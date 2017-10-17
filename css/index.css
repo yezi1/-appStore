@@ -1,3 +1,6 @@
+/***
+ * 模块分类
+ */
 .module {
   height: 80px;
   padding: 10px 0;
@@ -81,6 +84,49 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: 14px;
+}
+.category-floor .content .evaluation {
+  width: 94%;
+  height: 60px;
+  padding: 12px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.16);
+  margin-bottom: 15px;
+}
+.category-floor .content .evaluation:last-child {
+  margin-bottom: 0;
+}
+.category-floor .content .evaluation .evaluation-img,
+.category-floor .content .evaluation .evaluation-number {
+  flex: 60px 0 0;
+  height: 60px;
+}
+.category-floor .content .evaluation .evaluation-content {
+  flex: 1;
+  height: 60px;
+  padding: 0 10px;
+}
+.category-floor .content .evaluation .evaluation-content h2 {
+  font-weight: normal;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.category-floor .content .evaluation .evaluation-content p {
+  max-height: 35px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8f8f94;
+}
+.category-floor .content .evaluation .evaluation-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.category-floor .content .evaluation .evaluation-number {
+  color: #ffa200;
+  line-height: 60px;
+}
+.category-floor .content .evaluation .evaluation-number h2 {
+  font-weight: normal;
 }
 /***
  * 专题广告
