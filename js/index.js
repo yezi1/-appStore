@@ -62,7 +62,7 @@ $(function () {
     				$.each(data, function(index,data) {
 	    				selectHtml += '<a href=' + data['url'] + ' class="evaluation flex-css">' + 
 		    							  '<section class="evaluation-img">' +
-		    							  	  '<img src=' + data['img'] + '/>' +
+		    							  	  '<img src="' + data['img'] + '"/>' +
 		    							  '</section>' + 
 		    							  '<section class="evaluation-content">' +
 			    							  '<h2>' + data['title'] + '</h2>' +
