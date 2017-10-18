@@ -52,17 +52,10 @@ li {
   width: 100%;
   background-size: cover!important;
 }
-.swiper-container .swiper-wrapper .shuffling:nth-child(1) {
-  background: url(../img/banner1.jpg) no-repeat 50% 50%;
-}
-.swiper-container .swiper-wrapper .shuffling:nth-child(2) {
-  background: url(../img/banner2.png) no-repeat 50% 50%;
-}
-.swiper-container .swiper-wrapper .shuffling:nth-child(3) {
-  background: url(../img/banner3.png) no-repeat 50% 50%;
-}
-.swiper-container .swiper-wrapper .shuffling:nth-child(4) {
-  background: url(../img/banner4.jpg) no-repeat 50% 50%;
+.swiper-container .swiper-wrapper .shuffling a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 /***
  * 头部
@@ -111,7 +104,7 @@ li {
   -moz-transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  z-index: 14px;
+  z-index: 15px;
 }
 .public-header-on {
   transform: translate3d(0px, 0px, 0px) translateZ(0px);

@@ -1,0 +1,232 @@
+{
+	"search-layer": [
+		{
+			"text": "腾讯"
+		},
+		{
+			"text": "斗图"
+		},
+		{
+			"text": "单车"
+		},
+		{
+			"text": "小程序"
+		},
+		{
+			"text": "宝宝"
+		},
+		{
+			"text": "视频"
+		},
+		{
+			"text": "壁纸"
+		},
+		{
+			"text": "阅读"
+		},
+		{
+			"text": "小说"
+		},
+		{
+			"text": "工具"
+		}
+	],
+	"select": [
+		{
+			"url": "#",
+			"img": "img/test.jpg",
+			"title": "感恩笔记本",
+			"describe": "感恩笔记本：发现身边美好的人和事，让自己变得更幸福一点",
+			"scoring": "8.5"
+		},
+		{
+			"url": "#",
+			"img": "img/test1.jpg",
+			"title": "看图识字",
+			"describe": "看图识字：提高宝宝独立识记兴趣，开发大脑",
+			"scoring": "8.5"
+		},
+		{
+			"url": "#",
+			"img": "img/test2.png",
+			"title": "新品有戏应用",
+			"describe": "新品有戏应用：收罗全球最具设计和功能的好物",
+			"scoring": "8.5"
+		},
+		{
+			"url": "#",
+			"img": "img/test3.png",
+			"title": "爱弹唱",
+			"describe": "爱弹唱：有音乐，有快乐！",
+			"scoring": "8.5"
+		}
+	],
+	"shuffling": [
+		{
+			"url": "#",
+			"src": "img/banner1.jpg"
+		},
+		{
+			"url": "#",
+			"src": "img/banner2.png"
+		},
+		{
+			"url": "#",
+			"src": "img/banner3.png"
+		},
+		{
+			"url": "#",
+			"src": "img/banner4.jpg"
+		}
+	],
+	"thematicData": [
+		{
+			"url": "#",
+			"src": "img/tj.png"
+		},
+		{
+			"url": "#",
+			"src": "img/tj1.png"
+		},
+		{
+			"url": "#",
+			"src": "img/tj2.jpg"
+		},
+		{
+			"url": "#",
+			"src": "img/tj3.png"
+		},
+		{
+			"url": "#",
+			"src": "img/tj4.png"
+		}
+	],
+	"dailyData": [
+		{
+			"url": "#",
+			"src": "img/jx1.PNG",
+			"text": "极简笔记"	
+		},
+		{
+			"url": "#",
+			"src": "img/jx2.jpg",
+			"text": "洽总日签"	
+		},
+		{
+			"url": "#",
+			"src": "img/jx3.jpg",
+			"text": "她厨美食"	
+		},
+		{
+			"url": "#",
+			"src": "img/jx4.png",
+			"text": "热点小黄历"	
+		},
+		{
+			"url": "#",
+			"src": "img/jx5.jpg",
+			"text": "健康计算器"	
+		},
+		{
+			"url": "#",
+			"src": "img/jx6.png",
+			"text": "名片云管家"	
+		}
+	],
+	"socializeData": [
+		{
+			"url": "#",
+			"src": "img/sj1.jpg",
+			"text": "群约助手"	
+		},
+		{
+			"url": "#",
+			"src": "img/sj2.png",
+			"text": "角蛙动图"	
+		},
+		{
+			"url": "#",
+			"src": "img/sj3.png",
+			"text": "美食天下+"	
+		},
+		{
+			"url": "#",
+			"src": "img/sj4.png",
+			"text": "掌上英雄联盟lite"	
+		},
+		{
+			"url": "#",
+			"src": "img/sj5.png",
+			"text": "迹忆碎片"	
+		},
+		{
+			"url": "#",
+			"src": "img/sj6.jpg",
+			"text": "厦门小鱼社区"	
+		}
+	],
+	"musicData": [
+		{
+			"url": "#",
+			"src": "img/yl.jpg",
+			"text": "碎乐 +"	
+		},
+		{
+			"url": "#",
+			"src": "img/yl1.jpg",
+			"text": "听闻FM电台"	
+		},
+		{
+			"url": "#",
+			"src": "img/yl2.png",
+			"text": "青蜻蜓"	
+		},
+		{
+			"url": "#",
+			"src": "img/yl3.png",
+			"text": "荔枝FM"	
+		},
+		{
+			"url": "#",
+			"src": "img/yl4.png",
+			"text": "铃音DIY"	
+		},
+		{
+			"url": "#",
+			"src": "img/yl5.png",
+			"text": "喜马拉雅FM"	
+		}
+	],
+	"appletData": [
+		{
+			"url": "#",
+			"src": "img/n1.png",
+			"text": "leanfit健身名片"	
+		},
+		{
+			"url": "#",
+			"src": "img/n2.png",
+			"text": "专业P图PS图片处理修图改图在线"	
+		},
+		{
+			"url": "#",
+			"src": "img/n3.png",
+			"text": "知晓鸟"	
+		},
+		{
+			"url": "#",
+			"src": "img/n4.png",
+			"text": "夺宝助手"	
+		},
+		{
+			"url": "#",
+			"src": "img/n5.jpg",
+			"text": "皇阿码礼记"	
+		},
+		{
+			"url": "#",
+			"src": "img/n6.png",
+			"text": "校内达小微"	
+		}
+	]
+}
