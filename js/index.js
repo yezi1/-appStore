@@ -170,13 +170,12 @@ $(function () {
     /***
      * 可视区域加载图片
      */
-	$(window).scroll(function(){		
-		$('img').each(function(index,el){
-			var imgTop = $(this).offset().top-$(document).scrollTop()-$(window).height();
-			
-			if(imgTop < 0) {
-				$(this).attr('src',$(this).attr('data-src'));
-			}
-		});
-	});    
+//	$(window).scroll(function(){		
+//		$('img').each(function(index,el){
+//			var imgTop = $(this).offset().top-$(document).scrollTop()-$(window).height();		
+//			if(imgTop < 0) {
+//				$(this).attr('src',$(this).attr('data-src'));
+//			}
+//		});
+//	});    
 });
