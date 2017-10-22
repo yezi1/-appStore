@@ -93,7 +93,7 @@ $(function () {
     				$.each(data, function(index,data) {
     					thematicHtml += '<div class="swiper-slide">' + 
 	    									'<a href="' + data['url'] + '">' +
-	    										'<img src="' + data['src'] + '"/>'+
+	    										'<img src="img/load.gif" data-src="' + data['src'] + '"/>'+
 	    									'</a>'+
     									'</div>'
     				});
@@ -105,7 +105,7 @@ $(function () {
     			if(index == 'dailyData') {
     				$.each(data, function(index,data) {
     					dailyHtml += '<a href="' + data['url'] + '" class="swiper-slide">'+
-	    								 '<img src="' + data['src'] + '" alt="应用" />'+
+	    								 '<img src="img/load.gif" data-src="' + data['src'] + '" alt="应用" />'+
 	    								 '<span>' + data['text'] + '</span>'+
     								 '</a>'
     				});
@@ -117,7 +117,7 @@ $(function () {
     			if(index == 'socializeData') {
     				$.each(data, function(index,data) {
     					socializeHtml += '<a href="' + data['url'] + '" class="swiper-slide">'+
-		    								 '<img src="' + data['src'] + '" alt="应用" />'+
+		    								 '<img src="img/load.gif" data-src="' + data['src'] + '" alt="应用" />'+
 		    								 '<span>' + data['text'] + '</span>'+
 	    								 '</a>'
     				});
@@ -129,7 +129,7 @@ $(function () {
     			if(index == 'musicData') {
     				$.each(data, function(index,data) {
     					musicHtml += '<a href="' + data['url'] + '" class="swiper-slide">'+
-	    								 '<img src="' + data['src'] + '" alt="应用" />'+
+	    								 '<img src="img/load.gif" data-src="' + data['src'] + '" alt="应用" />'+
 	    								 '<span>' + data['text'] + '</span>'+
     								 '</a>'
     				});
@@ -141,7 +141,7 @@ $(function () {
     			if(index == 'appletData') {
     				$.each(data, function(index,data) {
     					appletHtml += '<a href="' + data['url'] + '" class="swiper-slide">'+
-	    								  '<img src="' + data['src'] + '" alt="应用" />'+
+	    								  '<img src="img/load.gif" data-src="' + data['src'] + '" alt="应用" />'+
 	    								  '<span>' + data['text'] + '</span>'+
     								  '</a>'
     				});
@@ -157,12 +157,26 @@ $(function () {
     		$('.socializeBox').append(socializeHtml);
     		$('.musicBox').append(musicHtml);
     		$('.appletBox').append(appletHtml);
-    		
+    					
     	},
     	error: function (XMLHttpRequest, textStatus, errorThrown) {
 			console.log('XMLHttpRequest 对象:' + XMLHttpRequest.status);
 			console.log('错误信息:' + XMLHttpRequest.readyState);
 			console.log('（可选）捕获的错误对象:' + textStatus);
     	}
+    	
     });
+    
+    /***
+     * 可视区域加载图片
+     */
+	$(window).scroll(function(){		
+		$('img').each(function(index,el){
+			var imgTop = $(this).offset().top-$(document).scrollTop()-$(window).height();
+			
+			if(imgTop < 0) {
+				$(this).attr('src',$(this).attr('data-src'));
+			}
+		});
+	});    
 });
