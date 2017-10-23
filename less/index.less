@@ -1,4 +1,246 @@
 /***
+ * 公共CSS
+ */
+body{
+    font-family: "微软雅黑";
+    font-size: 15px;
+    background-color: rgb(244,244,244);
+    padding-top: 45px;
+    font-size: 14px;
+}
+
+menu,h2,p,ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul,li{
+    list-style-type: none;
+}
+
+/***
+ * flex布局
+ */
+.flex-css{
+    display: -moz-box;  
+    display: -webkit-box; 
+    display: box;
+    display: flex;
+}
+
+/***
+ * 圆角50%
+ */
+.radius-50{
+    border-radius: 50%;
+    -moz-border-radius: 50%;    
+}
+
+/***
+ * 动画快到慢效果
+ */
+.ease-in-out(@time){
+    transition:all @time ease-in-out;
+    -moz-transition:all @time ease-in-out;
+    -webkit-transition:all @time ease-in-out; 
+    -o-transition:all @time ease-in-out;     
+}
+
+/***
+ * 轮播
+ */
+.HomePage{
+    position: relative;
+    .ease-in-out(.5s);
+    .swiper-container{
+        width: 100%;
+        height: 165px;
+        .swiper-wrapper{
+            .shuffling{
+                height: 165px;
+                width: 100%;
+                background-size: cover!important;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }     
+} 
+
+/***
+ * 头部
+ */
+.public-header{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    top: 0;
+    z-index: 13;
+    box-shadow: 0px 0px 7px #888888;
+    .ease-in-out(.5s);
+    .catalogue,.search,.search-button,.return-goto{
+        flex: 44px 0 0;
+        text-align: center;
+        line-height: 45px;
+        font-size: 20px;
+    }
+    .header-title,.header-input{
+        flex: 1 0 0;
+        text-align: center;
+    }
+    .header-input{
+        input{
+            width: 90%;
+            height: 25px;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            caret-color: red;
+        }
+    }
+}
+
+.public-header-1{
+    z-index: 15px;
+}
+
+.public-header-2{
+    .header-title{
+        text-align: left;
+        text-indent: 2em;
+        font-size: 16px;
+    }
+}
+
+.public-header-on{
+    transform: translate3d(0px, 0px, 0px) translateZ(0px);
+}
+
+/***
+ * 各分页公共样式
+ */
+.publicStyle{
+    height: 100%;
+    background-color: rgb(255,255,255);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    margin-top: 45px;
+    overflow: auto;    
+}
+
+/***
+ * 头部菜单
+ */
+.header-menu{
+    position: fixed;
+    top: -185px;
+    z-index: 12;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255,255,255);
+    .ease-in-out(.5s);
+    .menu-content{
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border-bottom: 1px solid rgb(239,239,239);
+        &>a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+        }
+    }
+}
+
+.header-menu-on{
+    transform: translate3d(0px, 230px, 0px) translateZ(0px);
+}
+
+/***
+ * 蒙层
+ */
+.PopUp-layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48,48,48,.5);
+    position: fixed;
+    top: 45px;
+    z-index: -11;
+    display: none;
+}
+
+.PopUp-layer-on{
+    display: block;
+    z-index: 11;
+}
+
+/***
+ * 搜索层
+ */
+.search-layer{
+    background-color: rgb(255,255,255);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 45px;
+    z-index: 9999;  
+    transform: translate3d(101%, 0px, 0px);
+    .ease-in-out(.5s);
+    ul{
+        margin-top: 65px;
+        li{
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            &:first-child{
+                height: 45px;
+                line-height: 45px;
+                h2{
+                    font-size: 15px;
+                    font-weight: normal;
+                }
+            }
+            a{
+                color: #0db252;
+            }
+        }
+    }
+}
+
+.search-layer-on{
+    transform: translate3d(0px, 0px, 0px) translateZ(0px);
+}
+
+.pageLeft{
+    transform: translate3d(-101%, 0px, 0px);
+}
+
+.pageRight{
+    transform: translate3d(101%, 0px, 0px);
+}
+
+.mescrollHide{
+    overflow: hidden;
+}
+
+
+//首页
+
+/***
  * 模块分类
  */
 .module{
@@ -143,6 +385,103 @@
                         width: 100%;
                         height: 100%;
                         border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//软件分类
+
+/***
+ * 一级分类
+ */
+.appClass{
+    .level-1{
+        width: 93%;
+        .ease-in-out(.5s);        
+        padding: 0 14px;
+        .container{
+            width: 100%;
+            margin-top: 10px;
+            padding-bottom: 45px;
+            .classList{
+                width: 100%;
+                height: 65px;
+                border-bottom: 1px solid rgb(220,220,220);
+                .classIcon{
+                    flex: 65px 0 0;                   
+                    text-align: center;
+                    i{
+                        font-size: 35px;
+                        line-height: 65px;
+                    }
+                    .video{
+                        font-size: 40px;
+                        color: rgb(250,118,143);
+                    }
+                    .socialization{                   
+                        color: rgb(84,226,178);
+                    }
+                    .system{
+                        color: rgb(247,193,33);
+                    }
+                    .camera{
+                        font-size: 33px;
+                        color: rgb(168,142,255);
+                    }
+                    .cny{
+                        display: block;
+                        background-color: rgb(248,90,40);
+                        border-radius: 50%;
+                        width: 37px;
+                        height: 37px;
+                        margin-left: 13px;
+                        margin-top: 15px;
+                        &:before{
+                            font-size: 23px;
+                            position: relative;
+                            top: -16px;
+                            color: rgb(255,255,255);
+                        }
+                    }
+                    .coffee{
+                        color: rgb(160,82,45);
+                    }
+                    .book{
+                        color: #C5C1AA;
+                    }
+                    .graduation-cap{
+                        color: rgb(101,178,247);
+                    }
+                }
+                .classContent{
+                    flex: 1;
+                    .title{
+                        height: 20px;
+                        line-height: 20px;
+                        padding-top: 15px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: rgb(75,75,75);
+                    }
+                    .detail{
+                        margin-top: 1px;
+                        li{
+                            display: inline-block;
+                            font-size: 13px;
+                            color: rgb(137,137,137);
+                        }
+                    }
+                }
+                .classArrow{
+                    flex: 35px 0 0;
+                    text-align: center;
+                    &>i{
+                        font-size: 32px;
+                        line-height: 65px;  
+                        color: rgb(205,205,205);
                     }
                 }
             }

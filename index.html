@@ -13,28 +13,36 @@
 	</head>
 
 	<body class="mescroll">
-		<!--头部-->
+		
+		<!--一级页面头部-->
 		<header class="public-header flex-css">
 			<section class="fa fa-bars catalogue"></section>
 			<section class="header-title">久久程序</section>
 			<section class="fa fa-search search"></section>
 		</header>
 		
+		<!--二级页面头部-->
+		<header class="public-header public-header-2 flex-css pageRight pageShow">
+			<section class="fa fa-chevron-left return-goto"></section>
+			<section class="header-title">分类</section>
+			<section class="fa fa-search search"></section>
+		</header>
+		
 		<!--头部菜单-->
 		<menu class="header-menu">
-			<section class="menu-content">
+			<section class="menu-content list-1">
 				<a href="#">首页</a>
 			</section>
-			<section class="menu-content">
+			<section class="menu-content list-2">
 				<a href="#">评测</a>
 			</section>
-			<section class="menu-content">
+			<section class="menu-content list-3">
 				<a href="#">专题</a>
 			</section>
-			<section class="menu-content">
+			<section class="menu-content list-4">
 				<a href="#">排行榜</a>
 			</section>
-			<section class="menu-content">
+			<section class="menu-content list-5">
 				<a href="#">类别</a>
 			</section>
 		</menu>
@@ -42,8 +50,8 @@
 		<!--蒙层-->
 		<aside class="PopUp-layer"></aside>
 		
-		<!--搜索框-->
-		<header class="public-header-2 flex-css">
+		<!--搜索框头部-->
+		<header class="public-header public-header-1 flex-css ">
 			<section class="fa fa-chevron-left return-goto"></section>
 			<section class="header-input">
 				<input type="text" placeholder="搜索软件" autofocus="autofocus" />
@@ -59,113 +67,266 @@
 			</ul>
 		</aside>
 		
-		<!--轮播-->
-		<section class="swiper-container shufflingBox">
-			<section class="swiper-wrapper"></section>
+		<!--首页-->
+		<div class="HomePage">
+			<!--轮播-->
+			<section class="swiper-container shufflingBox">
+				<section class="swiper-wrapper"></section>
+				
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+			</section>
 			
-			<!-- 如果需要分页器 -->
-			<div class="swiper-pagination"></div>
-		</section>
-		
-		<!--模块分类-->
-		<section class="module flex-css">
-			<a href="https://www.baidu.com/" class="review" >
-				<div class="icon radius-50">
-					<span class="fa fa-pencil"></span>
-				</div>
-				<span>评测</span>
-			</a>
-			<a href="#" class="project">
-				<div class="icon radius-50">
-					<span class="fa fa-cubes"></span>
-				</div>
-				<span>专题</span>
-			</a>
-			<a href="#" class="leaderboard">
-				<div class="icon radius-50">
-					<span class="fa fa-bar-chart"></span>
-				</div>
-				<span>排行榜</span>
-			</a>
-			<a href="#" class="category">
-				<div class="icon radius-50">
-					<span class="fa fa-tasks"></span>
-				</div>
-				<span>分类</span>
-			</a>
-		</section>
-		
-		<!--每日精选-->
-		<section class="category-floor daily">
-			<header class="title">
-				<span class="text">新鲜评测</span>
-				<a href="#" class="show">显示更多></a>
-			</header>
-			<section class="content"></section>
-		</section>
-		
-		<!--其他 1-->
-		<section class="category-floor thematicBox">
-			<section class="content">
-				<div class="others-content">
-					<div class="swiper-wrapper"></div>
-				</div>				
+			<!--模块分类-->
+			<section class="module flex-css">
+				<a href="https://www.baidu.com/" class="review" >
+					<div class="icon radius-50">
+						<span class="fa fa-pencil"></span>
+					</div>
+					<span>评测</span>
+				</a>
+				<a href="#" class="project">
+					<div class="icon radius-50">
+						<span class="fa fa-cubes"></span>
+					</div>
+					<span>专题</span>
+				</a>
+				<a href="#" class="leaderboard">
+					<div class="icon radius-50">
+						<span class="fa fa-bar-chart"></span>
+					</div>
+					<span>排行榜</span>
+				</a>
+				<a href="#" class="category">
+					<div class="icon radius-50">
+						<span class="fa fa-tasks"></span>
+					</div>
+					<span>分类</span>
+				</a>
 			</section>
-		</section>	
 			
-		<!--每日精选-->
-		<section class="category-floor">
-			<header class="title">
-				<span class="text">每日精选</span>
-				<a href="#" class="show">显示更多></a>
-			</header>
-			<section class="content">
-				<div class="floor-content">
-					<div class="swiper-wrapper dailyBox"></div>
-				</div>				
+			<!--每日精选-->
+			<section class="category-floor daily">
+				<header class="title">
+					<span class="text">新鲜评测</span>
+					<a href="#" class="show">显示更多></a>
+				</header>
+				<section class="content"></section>
 			</section>
-		</section>
+			
+			<!--其他 1-->
+			<section class="category-floor thematicBox">
+				<section class="content">
+					<div class="others-content">
+						<div class="swiper-wrapper"></div>
+					</div>				
+				</section>
+			</section>	
+				
+			<!--每日精选-->
+			<section class="category-floor">
+				<header class="title">
+					<span class="text">每日精选</span>
+					<a href="#" class="show">显示更多></a>
+				</header>
+				<section class="content">
+					<div class="floor-content">
+						<div class="swiper-wrapper dailyBox"></div>
+					</div>				
+				</section>
+			</section>
+			
+			<!--社交-->
+			<section class="category-floor">
+				<header class="title">
+					<span class="text">社交</span>
+					<a href="#" class="show">显示更多></a>
+				</header>
+				<section class="content">
+					<div class="floor-content">
+						<div class="swiper-wrapper socializeBox"></div>
+					</div>				
+				</section>
+			</section>
+			
+			<!--音乐-->
+			<section class="category-floor">
+				<header class="title">
+					<span class="text">音乐</span>
+					<a href="#" class="show">显示更多></a>
+				</header>
+				<section class="content">
+					<div class="floor-content">
+						<div class="swiper-wrapper musicBox"></div>
+					</div>				
+				</section>
+			</section>
+			
+			<!--最新小程序-->
+			<section class="category-floor">
+				<header class="title">
+					<span class="text">最新小程序</span>
+					<a href="#" class="show">显示更多></a>
+				</header>
+				<section class="content">
+					<div class="floor-content">
+						<div class="swiper-wrapper appletBox"></div>
+					</div>				
+				</section>
+			</section>			
+		</div>
 		
-		<!--社交-->
-		<section class="category-floor">
-			<header class="title">
-				<span class="text">社交</span>
-				<a href="#" class="show">显示更多></a>
-			</header>
-			<section class="content">
-				<div class="floor-content">
-					<div class="swiper-wrapper socializeBox"></div>
-				</div>				
+		<!--软件分类-->
+		<div class="appClass">
+			<section class="level-1 publicStyle pageRight pageShow pageShow2">
+				<ul class="container">
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-comment socialization"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">社交通讯</section>
+							<ul class="detail">
+								<li>聊天</li>
+								<li>社交</li>
+								<li>婚恋</li>
+								<li>通讯</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-play-circle video"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">视频播放</section>
+							<ul class="detail">
+								<li>音乐</li>
+								<li>视频</li>
+								<li>铃声</li>
+								<li>播放器</li>
+								<li>电台</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-wrench system"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">系统工具</section>
+							<ul class="detail">
+								<li>优化</li>
+								<li>安全</li>
+								<li>浏览器</li>
+								<li>输入法</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-camera camera"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">拍摄美化</section>
+							<ul class="detail">
+								<li>相机</li>
+								<li>照片美化</li>
+								<li>摄像</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-cny cny"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">理财购物</section>
+							<ul class="detail">
+								<li>网购</li>
+								<li>记账</li>
+								<li>彩票</li>
+								<li>股票基金</li>
+								<li>银行</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-coffee coffee"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">便捷生活</section>
+							<ul class="detail">
+								<li>美食外卖</li>
+								<li>购票</li>
+								<li>住房装修</li>
+								<li>生活服务</li>
+								<li>汽车生活</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-book book"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">新闻阅读</section>
+							<ul class="detail">
+								<li>新闻咨询</li>
+								<li>电子书</li>
+								<li>漫画</li>
+								<li>听书</li>
+								<li>报纸杂志</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+					<li class="flex-css classList">
+						<section class="classIcon">
+							<i class="fa fa-graduation-cap graduation-cap"></i>
+						</section>
+						<section class="classContent">
+							<section class="title">教育学习</section>
+							<ul class="detail">
+								<li>语言学习</li>
+								<li>在线教育</li>
+								<li>儿童教育</li>
+								<li>词典翻译</li>
+							</ul>
+						</section>
+						<section class="classArrow">
+							<i class="fa fa-angle-right"></i>
+						</section>
+					</li>
+				</ul>
 			</section>
-		</section>
+			<section class="level-2">
+				
+			</section>
+		</div>
 		
-		<!--音乐-->
-		<section class="category-floor">
-			<header class="title">
-				<span class="text">音乐</span>
-				<a href="#" class="show">显示更多></a>
-			</header>
-			<section class="content">
-				<div class="floor-content">
-					<div class="swiper-wrapper musicBox"></div>
-				</div>				
-			</section>
-		</section>
-		
-		<!--最新小程序-->
-		<section class="category-floor">
-			<header class="title">
-				<span class="text">最新小程序</span>
-				<a href="#" class="show">显示更多></a>
-			</header>
-			<section class="content">
-				<div class="floor-content">
-					<div class="swiper-wrapper appletBox"></div>
-				</div>				
-			</section>
-		</section>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="js/base.js"></script>
 		<script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
 		<script>
